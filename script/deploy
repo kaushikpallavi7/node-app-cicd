@@ -1,6 +1,6 @@
 #!/bin/sh
-ssh ec2-user@ip-10-0-1-47 <<EOF
- cd ~/node-app-cicd
+ssh -i "pallavi-test-keypair.pem" ec2-user@13.127.49.249 <<EOF
+ cd ~/node-app
  git pull
  npm install — production
  pm2 restart all
