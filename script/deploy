@@ -1,0 +1,8 @@
+#!/bin/sh
+ssh ec2-user@ip-10-0-1-47 <<EOF
+ cd ~/node-app-cicd
+ git pull
+ npm install — production
+ pm2 restart all
+ exit
+EOF
