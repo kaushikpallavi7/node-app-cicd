@@ -1,5 +1,5 @@
 #!/bin/sh
-ssh -i "pallavi-test-keypair.pem" ec2-user@13.127.49.249 <<EOF
+ssh -i "/home/ubuntu/pallavi-test-keypair.pem" ec2-user@13.127.49.249 <<EOF
  cd ~/node-app
  git pull
  npm install — production
